@@ -44,13 +44,10 @@
 
     <script>
         let btns = document.querySelectorAll('button');
-
         btns.forEach(getBtn);
-
         function getBtn(elem) {
             elem.addEventListener('click', buttonClickHandler);
         };
-
         function buttonClickHandler(event) {
             if (event.target.innerText == 'В корзину') {
                 event.target.parentNode.style.background = 'lightgreen';

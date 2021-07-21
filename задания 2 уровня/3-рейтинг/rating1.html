@@ -44,9 +44,7 @@
 
         let goldenClass = 'golden';
         let stars = document.querySelectorAll('i');
-
         stars.forEach(addRemoveMetod);
-
         function addRemoveMetod(elem) {
             elem.addEventListener('mouseover', function (e) {
                 e.target.classList.add(goldenClass);
@@ -57,7 +55,6 @@
                 removeGolden(e.target.previousElementSibling);
             });
         }
-
         function addGolden(elem) {
             if (elem !== null) {
                 elem.classList.add(goldenClass);
@@ -65,7 +62,6 @@
                 addGolden(newElem);
             }
         }
-
         function removeGolden(elem) {
             if (elem !== null) {
                 elem.classList.remove(goldenClass);
@@ -73,7 +69,6 @@
                 removeGolden(newElem);
             }
         }
-
 
         // fourthStar.addEventListener('mouseover', function () {
         //     if (!fourthStar.classList.contains('goldenClass')) {
@@ -84,8 +79,6 @@
         // fourthStar.addEventListener('mouseout', function () {
         //     fourthStar.classList.remove(goldenClass);
         // });
-
-
     </script>
 </body>
 

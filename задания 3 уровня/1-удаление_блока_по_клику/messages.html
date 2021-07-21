@@ -44,19 +44,14 @@
     -->
 
     <script>
-
         let btns = document.querySelectorAll('.close');
         btns.forEach(closeAlert);
-
         function closeAlert(elem) {
             elem.addEventListener('click', closeClickHandler);
-        }
-
+        };
         function closeClickHandler(e) {
             event.currentTarget.parentNode.style.display = 'none';
-
-
-        }
+        };
     </script>
 </body>
 

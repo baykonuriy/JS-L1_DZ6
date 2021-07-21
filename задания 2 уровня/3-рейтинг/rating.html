@@ -45,9 +45,6 @@
         let goldenClass = 'golden';
 
         let stars = document.querySelectorAll('i');
-
-        console.log(typeof (stars[0]));
-
         stars.forEach(function (elem) {
             elem.addEventListener('mouseover', function (e) {
                 e.target.classList.add(goldenClass);
